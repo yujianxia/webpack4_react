@@ -1,0 +1,19 @@
+/* 样式表没有作用域 全局生效 */
+.color_red{
+    color: red;
+}
+.pStyle{
+    font-size: 14px;
+    color: red;
+}
+
+/* css 模块化只是针对于class id 两种选择器， 标签选择器是不是被转换的 */
+h1{
+    font-style: italic;
+}
+
+/* :global() {} 不被模块化的类名,全局生效 */
+:global(.test) {
+  color: forestgreen;
+}
+/* :local() {} 不被模块化的类名,全局生效 */
