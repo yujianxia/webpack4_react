@@ -14,13 +14,13 @@ import styles1 from '@/components/styles';
 // 这种方式相当于在页面上写style标签
 // 导入的css，全局生效。样式可能会冲突
 // react如何像vue中（<style scoped></style>）解决样式冲突？
-import csss from '@/css/index.scss'; //导入css样式表
-console.log('1212212',csss);
+// import csss from '@/css/index.scss'; //导入css样式表
+// console.log('1212212',csss);
 
 export default function CmtItem(poros) {
   return <div style={styles.divStyle}>
     <h1 style={styles1.h4Style}>评论人：{poros.user}</h1>
-    <p className={csss.pStyle}>评论内容：{poros.content}</p>
+    {/* <p className={csss.pStyle}>评论内容：{poros.content}</p> */}
 
   </div>
 }

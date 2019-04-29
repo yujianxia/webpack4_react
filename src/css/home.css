@@ -1,0 +1,12 @@
+.leftBar{
+    width: 100px;
+    height: 400px;
+    float: left;
+    background: gray;
+}
+.rightBar{
+    width: 900px;
+    height: 400px;
+    border: 1px solid red;
+    float: left;
+}
